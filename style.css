@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     width: 100%;
     min-height: 100vh;
+
 }
 
 /***** FIM CONFIGURAÇÃO DO CONTAINER ****/
@@ -31,18 +32,18 @@ body {
     height: auto;
     background-color: #206CA6;
 
-
 }
 
 /***** FIM DA CONFIGURAÇÃO DO TOPO ****/
 /***** CONFIGURAÇÃO DO LOGO DO SITE ****/
 #logo {
 
-    width: auto;
-    height: auto;
+    width: 300px;
+    height: 77px;
     float: left;
     margin-left: 40px;
-    margin-top: 40px;
+    padding-top: 10px;
+    margin-right: 20px;
 }
 
 #logo img {
@@ -55,11 +56,10 @@ body {
 /***** FIM DA CONFIGURAÇÃO DO LOGO DO SITE ****/
 /***** CONFIGURAÇÃO DA REDE SOCIAIS ****/
 #rede-sociais {
-    width: 116px;
+    width: auto;
     height: 50px;
     float: right;
-    margin-right: 40px;
-    margin-top: 70px;
+    margin-right: 20px;
 }
 
 /***** FIM DA CONFIGURAÇÃO DA REDE SOCIAIS ****/
@@ -73,9 +73,9 @@ body {
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 
 .menu_simple ul {
@@ -92,7 +92,6 @@ body {
     float: left;
     text-decoration: none;
     color: white;
-
     margin-left: 100px;
     background-color: #022A4F;
 }
@@ -107,7 +106,13 @@ body {
 }
 
 .menu_simple ul #home {
-    margin-left: 0;
+    margin-left: 20px;
+}
+
+.menu_simple ul:last-child {
+
+    margin-right: 20px;
+
 }
 
 /***** FIM DA CONFIGURAÇÃO DO MENU DO SITE ****/
@@ -141,7 +146,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-left: 30px;
+    padding-left: 30px;
 }
 
 .caixa-conteudo h3 {
@@ -184,7 +189,12 @@ body {
 
 
 #rodape-site .caixa-conteudo:first-child {
-    margin-left: 0;
+    padding-left: 0;
+
+}
+
+#rodape-site .caixa-conteudo:last-child {
+    padding-right: 20px;
 
 }
 
@@ -265,7 +275,7 @@ body {
 
 }
 
-@media screen and (max-width: 637px) {
+@media screen and (max-width: 537px) {
 
     #rodape-site {
         height: auto;
@@ -283,8 +293,79 @@ body {
         margin-top: 25px;
     }
 
-    .caixa-conteudo:last-child {
-        margin-bottom: 25px;
+    #rodape-site .caixa-conteudo:nth-child(2) {
+        padding-left: 0px;
     }
 
+    #rodape-site .caixa-conteudo:last-child {
+        margin-bottom: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+
+@media screen and (max-width: 723px) {
+
+    .menu_simple {
+        height: auto;
+    }
+
+    .menu_simple ul li {
+        display: flex;
+    }
+
+    .menu_simple ul li a {
+        margin-left: 20px;
+        margin-top: 20px
+    }
+
+    .menu_simple ul:last-child {
+        margin-bottom: 20px
+    }
+}
+
+#logoRede {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 483px) {
+
+    #logoRede {
+
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+
+
+    #logo {
+
+        width: 95%;
+        height: 95%;
+        margin-left: 0px;
+        padding-top: 0px;
+        margin-right: 0px;
+    }
+
+
+    /***** FIM DA CONFIGURAÇÃO DO LOGO DO SITE ****/
+    /***** CONFIGURAÇÃO DA REDE SOCIAIS ****/
+    #rede-sociais {
+
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    #rede-sociais img {
+
+        height: 95%;
+    }
 }
