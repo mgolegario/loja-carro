@@ -210,13 +210,14 @@ body {
 }
 
 #rodape-site .caixa-conteudo:nth-child(2) {
-    padding-right: 20px;
+    padding-right: 30px;
 
 }
 
 #rodape-site .caixa-conteudo:last-child {
     padding-right: 20px;
     padding-left: 0;
+    padding-bottom: 55px;
 }
 
 #autor-site {
@@ -282,6 +283,8 @@ body {
 
 /***** FIM CONFIGURAÇÃO DO SOBRE ****/
 
+
+/* CLASSE PARA JUNTAR RODAPE E AUTOR*/
 .ColaRodape {
 
     display: flex;
@@ -289,6 +292,10 @@ body {
 
 }
 
+/* FIM CLASSE PARA JUNTAR RODAPE E AUTOR*/
+
+
+/* RESPONSIVIDADE DO SOBRE */
 
 @media screen and (max-width: 767px) {
     #sobre {
@@ -310,6 +317,7 @@ body {
 
 }
 
+/* RESPONSIVIDADE DO RODAPE */
 
 @media screen and (max-width: 537px) {
 
@@ -338,10 +346,12 @@ body {
         margin-bottom: 25px;
         padding-left: 0px;
         padding-right: 0px;
+        padding-bottom: 0px;
     }
 
 }
 
+/* RESPONSIVIDADE DA NAVBAR*/
 
 @media screen and (max-width: 763px) {
 
@@ -378,6 +388,8 @@ body {
     margin-top: 20px;
 }
 
+/* RESPONSIVIDADE DA LOGO/REDES SOCIAIS */
+
 @media screen and (max-width: 483px) {
 
     #logoRede {
@@ -397,9 +409,6 @@ body {
         margin-right: 0px;
     }
 
-
-    /***** FIM DA CONFIGURAÇÃO DO LOGO DO SITE ****/
-    /***** CONFIGURAÇÃO DA REDE SOCIAIS ****/
     #rede-sociais {
 
         padding-top: 0px;
@@ -413,3 +422,5 @@ body {
         height: 90%;
     }
 }
+
+/*FIM MEDIA SCREEN*/
