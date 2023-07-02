@@ -40,6 +40,8 @@ body {
 
     width: 300px;
     height: 77px;
+    max-width: 350px;
+    max-height: 77.44px;
     float: left;
     margin-left: 40px;
     padding-top: 10px;
@@ -56,10 +58,12 @@ body {
 /***** FIM DA CONFIGURAÇÃO DO LOGO DO SITE ****/
 /***** CONFIGURAÇÃO DA REDE SOCIAIS ****/
 #rede-sociais {
+
     width: auto;
     height: 50px;
     float: right;
     margin-right: 20px;
+    padding-top: 10px;
 }
 
 /***** FIM DA CONFIGURAÇÃO DA REDE SOCIAIS ****/
@@ -106,7 +110,7 @@ body {
 }
 
 .menu_simple ul #home {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .menu_simple ul:last-child {
@@ -119,18 +123,19 @@ body {
 /***** CONFIGURAÇÃO DO SLIDE DO SITE ****/
 #slide {
     position: relative;
-
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
-#slide {
 
-    width: 50%;
 
+.imagem {
+    max-width: 500px;
+    width: 80%;
 }
 
 
@@ -201,7 +206,7 @@ body {
 #autor-site {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 40px;
     background-color: #206CA6;
     text-align: center;
     color: white;
@@ -230,12 +235,14 @@ body {
     align-items: center;
     padding: 20px;
 
-
 }
 
 #foto-sobre {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    max-width: 750px;
+    flex-basis: 50%;
+    min-width: 400px;
+
 }
 
 #foto-sobre img {
@@ -249,31 +256,42 @@ body {
 #texto-sobre {
     width: 80%;
     height: auto;
-    padding-left: 30px
+    padding-left: 30px;
+    flex-basis: 50%;
+    max-width: 750px;
+
 }
 
 /***** FIM CONFIGURAÇÃO DO SOBRE ****/
 
+.ColaRodape {
+
+    display: flex;
+    flex-direction: column;
+
+}
 
 
 @media screen and (max-width: 767px) {
     #sobre {
         flex-direction: column;
-
+        height: auto;
 
     }
 
     #foto-sobre {
-
+        max-width: 400px;
         margin: 20px;
+        min-width: 0px;
     }
 
     #texto-sobre {
-
+        margin-bottom: 20px;
         padding-left: 0px;
     }
 
 }
+
 
 @media screen and (max-width: 537px) {
 
@@ -306,7 +324,7 @@ body {
 }
 
 
-@media screen and (max-width: 723px) {
+@media screen and (max-width: 733px) {
 
     .menu_simple {
         height: auto;
@@ -318,11 +336,16 @@ body {
 
     .menu_simple ul li a {
         margin-left: 20px;
-        margin-top: 20px
+        margin-top: 30px
+    }
+
+    .menu_simple ul #home {
+        margin-left: 20px;
+
     }
 
     .menu_simple ul:last-child {
-        margin-bottom: 20px
+        margin-bottom: 30px
     }
 }
 
@@ -341,7 +364,7 @@ body {
     #logoRede {
 
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 35px;
     }
 
 
@@ -360,12 +383,14 @@ body {
     /***** CONFIGURAÇÃO DA REDE SOCIAIS ****/
     #rede-sociais {
 
+        padding-top: 0px;
         margin-right: 0px;
-        margin-top: 20px;
+        margin-top: 25px;
+        flex-wrap: nowrap;
     }
 
     #rede-sociais img {
 
-        height: 95%;
+        height: 90%;
     }
 }
