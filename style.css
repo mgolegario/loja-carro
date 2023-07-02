@@ -121,22 +121,33 @@ body {
 
 /***** FIM DA CONFIGURAÇÃO DO MENU DO SITE ****/
 /***** CONFIGURAÇÃO DO SLIDE DO SITE ****/
+
+
+
+
 #slide {
-    position: relative;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
+    padding: 10px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#slide img {
+    padding-top: 10px;
+    width: 100%;
+    max-width: 550px;
+}
+
+#slide img:first-child {
+
+    padding-top: 0px;
 }
 
 
-
-.imagem {
-    max-width: 500px;
-    width: 80%;
-}
 
 
 /***** FIM DA CONFIGURAÇÃO DO SLIDE DO SITE ****/
@@ -198,9 +209,14 @@ body {
 
 }
 
-#rodape-site .caixa-conteudo:last-child {
+#rodape-site .caixa-conteudo:nth-child(2) {
     padding-right: 20px;
 
+}
+
+#rodape-site .caixa-conteudo:last-child {
+    padding-right: 20px;
+    padding-left: 0;
 }
 
 #autor-site {
@@ -217,6 +233,8 @@ body {
 
 
 }
+
+
 
 /***** FIM CONFIGURAÇÃO DO RODAPE DO SITE ****/
 /***** CONFIGURAÇÃO DA DIV SOBRE ****/
@@ -313,6 +331,7 @@ body {
 
     #rodape-site .caixa-conteudo:nth-child(2) {
         padding-left: 0px;
+        padding-right: 0px;
     }
 
     #rodape-site .caixa-conteudo:last-child {
@@ -324,7 +343,7 @@ body {
 }
 
 
-@media screen and (max-width: 733px) {
+@media screen and (max-width: 763px) {
 
     .menu_simple {
         height: auto;
